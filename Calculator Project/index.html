@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+
+html, body {
+	background: white;
+}
+#inputholder{
+ width: 254px;
+ background-color: blue;
+}
+
+.wavey{
+text-align: right;
+width: 254px;
+height: 50px;
+font-size: 30px;
+position: relative;
+top: 0px;
+border: none;
+}
+
+#father {
+	background-color: black;
+	border: none;
+	position: relative;
+}
+
+#cell{
+	position: absolute;
+	left: 37.6%;
+	top: 30px;
+	background: white;
+	border: none;
+}
+
+#Calc {
+	position: absolute;
+	left: 41.2%;
+	top: 120px;
+	height: 453px;
+	width: 253px;
+	display: inline-block;
+	background: white;
+	border: none;
+	}
+
+#table {
+	width: 255px;
+	height: 450px;
+	border: none;
+	position: absolute;
+}
+
+
+
+#row1{
+	display: inline-block;
+	position: relative;
+	top: 56px;
+	left: 24px;
+
+}
+
+#row2{
+	display: inline-block;
+	position: relative;
+	top: 66px;
+	left: 24px;
+
+}
+
+#row3{
+	display: inline-block;
+	position: relative;
+	top: 76px;
+	left: 24px;
+}
+
+#row4{
+	display: inline-block;
+	position: relative;
+	top: 86px;
+	left: 24px;
+}
+
+#row5{
+	display: inline-block;
+	position: relative;
+	top: 96px;
+	left: 24px;
+}
+
+#footer{
+	position: relative;
+	display: inline-block;
+	top: 91px;
+	border: none;
+}
+
+#AVG{
+	width: 50px;
+	  padding-top:6%;
+	padding-bottom:6%;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  border: black;
+  margin:-40px 0px 10px -1px;
+}
+
+#AC{
+	width: 50px;
+	  padding-top:6%;
+	padding-bottom:6%;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  border: black;
+  margin:-40px 0px 10px -1px;
+
+}
+.white {
+	width: 50px;
+  padding-top:5%;
+  padding-bottom:4%;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  margin:-40px 0px 10px -1px;
+  background: white;
+	color: black;
+	border: solid #F5F3EE;
+}
+
+.button{
+  width: 50px;
+  padding-top:6%;
+  padding-bottom:6%;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  border: black;
+  margin:-40px 0px 10px -1px;
+  
+}
+
+ #AC {
+	width: 50px;
+  padding-top:6%;
+  padding-bottom:6%;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  margin:-40px 0px 10px -1px;
+  background: #ff8c00;
+	color: white;
+}
+
+#AVG {
+	width: 50px;
+  padding-top:6%;
+  padding-bottom:6%;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  margin:-40px 0px 10px -1px;
+  background: #0073ff;
+	color: white;
+
+}
+
+#delete {
+  width: 50px;
+  padding-top:6%;
+  padding-bottom:6%;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  border: black;
+  margin:-40px 0px 10px -1px;
+  background: #E30B39;
+  color: white; 
+  background: 
+}
+#equal {
+  width: 50px;
+  padding-top:6%;
+  padding-bottom:6%;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  border: black;
+  margin:-40px 0px 10px -1px;
+  background: #696969; 
+  color: white;
+}
+
+.white, .button, #AC,#AVG,#equal,#delete:focus {
+	outline:0;
+}
+
+#test{
+	position: relative;
+	left: 20px;
+	top: 20px;
+	background: blue;
+}
+
+#textboxholder{
+	position: absolute;
+	left: 400px;
+	width: 440px;
+	color: red;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif, cursive;
+	font-weight: bolder;
+}
+
+#logoholder{
+	position: absolute;
+	left: 400px;
+	top: 210px;
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript">
+function sublimeHatesMe()
+{
+    var first = document.getElementById('Input').value;
+    var second = first.split("+");
+    var third = second.length;
+    var fourth = eval(first);
+    var answer = fourth / third;
+    document.getElementById('Input').value = answer;
+
+}
+</script>
+
+
+</head>
+
+<body>
+	<div id="father">
+
+<center>
+	<div id="cell" >
+ <img src="andriod.png" border="5" alt="Logo" height="620px";
+	width="360px" />
+	</div>
+</center>
+
+
+<form id="Calc">
+<div id="table">
+
+<div id="inputholder">
+	<img id="nav" src="nav.png" width="255px" style="padding: 0; margin: 0 auto; border: none;">
+	<input class="wavey" id="Input" readonly placeholder="| " type="text">
+</div>
+
+
+
+<div id="row1">
+	<input type=button id="AC" value="AC" onclick="Calc.Input.value=''">
+
+	<input type=button class="button" value="÷" onclick="Calc.Input.value+='/'">
+	<input type=button class="button" value="x" onclick="Calc.Input.value+='*'">
+	<button type="button" id="delete" onclick="Calc.Input.value= Calc.Input.value.slice(0, Calc.Input.value.length -1)"><i class="fa fa-arrow-left"></i> </button> 
+</div>
+
+<div id="row2">
+		<input  type="button"  class="white" value="7" onclick="Calc.Input.value += '7'"> 
+		<input type="button"   class="white"  value="8" onclick="Calc.Input.value += '8'">
+		<input type="button"   class="white" value="9" onclick="Calc.Input.value += '9'">
+		<input type="button"   class="button" value="%" onclick="Calc.Input.value= 'Update The App'">
+</div>
+
+<div id="row3">
+	<input  type="button"  class="white" value="4" onclick="Calc.Input.value += '4'"> 
+	<input type="button"   class="white"  value="5" onclick="Calc.Input.value += '5'">
+	<input type="button"   class="white" value="6" onclick="Calc.Input.value += '6'">
+	<input type ="button"  class="button"  value="-"  " onclick="Calc.Input.value+='-'">
+</div>
+
+<div id="row4">
+		<input  type="button" class="white" value="1" onclick="Calc.Input.value += '1'"> 
+	<input type="button"  class="white"  value="2" onclick="Calc.Input.value += '2'">
+	<input type="button"  class="white"  value="3" onclick="Calc.Input.value += '3'">
+	<input type="button"  class="button" value="+" onclick="Calc.Input.value += '+'">
+
+</div>
+
+	<div id="row5">
+	<input  type="button" class="white" value="0" onclick="Calc.Input.value += '0'"> 
+	<input type="button"  class="white"  value="." onclick="Calc.Input.value += '.'">
+	<input type="button" id="AVG" value="AVG" onclick="sublimeHatesMe();">
+	<input type="button"  id="equal" value="=" onclick="Calc.Input.value=eval(Calc.Input.value)">
+
+</div>
+
+
+<div>
+	<img id="footer" src="footer.png" width="255px" style="padding: 0; margin: 0 auto;">
+</div>
+
+<div id="textboxholder">
+<b> *<b> In order to calculate the average, just add up all the numbers you are trying to find the average of and instead of pressing "=", press the <u><b>"AVG"</u><b> button to find the arithmetic average.
+</div>
+
+<div id="logoholder">
+	<img src="logo.png" height="200px">
+</div>
+
+</div>
+</form>
+<!-- father div -->
+</div>
+</body>
+</html>
