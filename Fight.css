@@ -1,0 +1,349 @@
+body{
+  background: black;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*background div*/
+#background{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    z-index: -1;
+}
+
+/*very top of the html page*/
+#logoHolder{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#logo{
+  height: 180px;
+}
+
+/*instructions*/
+#ryuInstructions{
+  width: 400px;
+  text-align: right;
+  align-self: center;
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+}
+
+#kenInstructions{
+  width: 400px;
+  text-align: left;
+  align-self: center;
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+}
+
+
+
+
+/*health and street fighter sign*/
+#top{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  justify-content: center;
+}
+
+/*HEALTH SECTION*/
+
+#healthSection{
+  width: 80%;
+  margin-left:  12%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#timeButton{
+  height: 40px;
+  width: 200px;
+  font-weight: bolder;
+  border: 0px outset #C99700;
+  background: gold;
+  animation: glowing 1300ms infinite;
+}
+
+#timeButton:focus{
+  outline: 0;
+}
+
+span{
+  font-size: 24px;
+  color: white;
+}
+
+
+#fightButton:hover{
+  cursor: pointer;
+}
+
+/*holds all the bars for Ryu*/
+
+#ryuBarContainer{
+position: relative;
+}
+
+/*ryu life bar*/
+#ryuHealth{
+  background: #00FF00;
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+/*ryu death bar*/
+#ryuDeath{
+  background: red;
+  width: 0px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  max-width: 400px;
+}
+
+/*holds all the bars for Ken*/
+#kenBarContainer{
+  position: relative;
+}
+
+
+/*Kens life bar*/
+#kenHealth{
+  background: #00FF00;
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+  align-self: flex-end;
+}
+
+/*ken's death bar*/
+#kenDeath{
+  background: red;
+  width: 0px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  max-width: 400px;
+}
+
+/*Below Health bar*/
+#belowHealth{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+}
+
+#ryuName{
+  text-align: right;
+  width: 440px;
+}
+
+#kenName{
+  text-align: left;
+  width: 400px;
+}
+
+
+/*fighters container*/
+#fighters{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: 140px;
+  justify-content: center;
+}
+
+/*ryu starting*/
+#ryu{
+  height:300px;
+  width:200px;
+  position: relative;
+  /*background: url(ryu/ryuStand.gif);
+  background-size: cover;*/
+}
+
+/*ALL RYUS*/
+
+#ryuFirst{
+position: absolute;
+height:300px;
+width:200px;
+left: 520px;
+}
+
+#ryuSecond{
+position: absolute;
+height:320px;
+width:300px;
+left: 500px;
+top: -16px;
+display: none;
+}
+
+#ryuThird{
+position: absolute;
+height:320px;
+width:400px;
+left: 400px;
+top: -16px;
+display: none;
+}
+
+#ryuFourth{
+position: absolute;
+height:320px;
+width:500px;
+left: 320px;
+top: -18px;
+display: none;
+}
+
+#ryuFifth{
+position: absolute;
+height:340px;
+width:320px;
+left: 500px;
+top: -40px;
+display: none;
+}
+
+#ryuSixth{
+position: absolute;
+height:320px;
+width:300px;
+left: 520px;
+top: -20px;
+display: none;
+}
+
+#ryuSeven{
+position: absolute;
+height:420px;
+width:360px;
+left: 470px;
+top: -120px;
+
+}
+
+#ryuSpecial{
+position: absolute;
+height:380px;
+width:220px;
+left: 528px;
+top: -80px;
+display: none;
+}
+
+#ryuDead{
+height:380px;
+width:400px;
+position: absolute;
+left: 318px;
+top: -80px;
+display: none;
+}
+
+/*ryu ends*/
+
+
+/*ALL KENS*/
+#kenFirst{
+  height:300px;
+  width:200px;
+  position: absolute;
+}
+
+#kenSecond{
+  height:300px;
+  width:300px;
+  position: absolute;
+  left: 624px;
+  display: none;
+}
+
+#kenThird{
+  height:300px;
+  width:300px;
+  position: absolute;
+  left: 624px;
+  display: none;
+}
+
+#kenFourth{
+  height:300px;
+  width:300px;
+  position: absolute;
+  left: 650px;
+  display: none;
+}
+
+#kenFifth{
+  height:306px;
+  width:400px;
+  position: absolute;
+  left: 650px;
+  top: -8px;
+  display: none;
+}
+
+#kenSix{
+  height:400px;
+  width:360px;
+  position: absolute;
+  left: 600px;
+  top: -100px;
+}
+#kenDead{
+  height:380px;
+  width:420px;
+  position: absolute;
+  left: 710px;
+  top: -90px;
+  display: none;
+}
+#kenPeace{
+   height:300px;
+  width:260px;
+  position: absolute;
+  top: -4px;
+  left: 694px;
+  display: none;
+}
+
+
+
+
+
+ /* Key frames glowing work in 3 parts so I used it to grab the users attention of what to click to proceed. put a dark as 0 and 100% because if you put 3 individual colors it wouldn't look right so workin with 2 it best, 50% should be bright to make it seem like the button is glowing. */
+@keyframes glowing {
+  0% {
+   background-color: #C99700; box-shadow: 0 0 90px #C99700;
+  }
+
+  50% {
+   background-color: #f8d211; box-shadow: 0 0 90px #f8d211;
+  }
+
+  100% {
+  background-color:#C99700 ; box-shadow: 0 0 90px #C99700;
+    }
+
+
+
