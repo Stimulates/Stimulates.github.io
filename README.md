@@ -1,1 +1,1 @@
-HTML,CSS, JAVASCRIPT. I did my own video editing and designs to display the game and make the user feel as if they were playing from an arcade machine.
+HTML,CSS, JAVASCRIPT. I did my own video editing and designs to display the game and make the user feel as if they were playing from an arcade machine.https://stimulates.github.io/    because of memory capacity images didn't fully show up if you download it, you will enjoy it at it's best.
